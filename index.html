@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Savory Palace </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+        <!-- HEADER  -->
+      <header class="header">
+          <img  src="palace.png" alt="savory's Palace">
+          <div class="navMenu" id="navMenu">
+          <i class="bx bx-window-close" onclick="closeMenu()"></i>    
+        <ul>
+           <li> <a href="index.html">Home </a> </li>
+           <li> <a href="index.html#About-Us"> About Us</a> </li>
+           <li> <a href="menu.html">Menu</a></li>
+           <li> <a href="index.html#Reviews"> Reviews</a></li>
+           <li> <a href="index.html#order"> Order Now</a></li>
+           <li> <a href="index.html#contact"> Contact </a></li>
+           <li> <a href="cart.html"> My Cart </a></li>
+         
+        </ul> 
+          </div>
+                
+          <i class="bx bx-menu" onclick="openMenu()"></i>
+      </header>
+        
+        <!-------------------- HOME. ---------------->
+         <section class="Home" id="Home">
+             <div class="Home-content">
+                 <div class="Home-intro">
+                <h3> Welcome To <br><span id="sp">Savory Palace</span></h3>  
+       <p>  Discover a world of delicious flavors at <b>Savory Palace</b>! From mouthwatering local delicacies to irresistible continental dishes, every meal is freshly prepared with love and the finest ingredients. Explore our menu, satisfy your cravings, and enjoy delicious meals delivered right to your doorstep.</p>
+                <h5> Delicious meals, for every craving 🍽️</h5>  
+                 </div>
+                 
+       <a href="menu.html" class="btn">Explore Our Menu</a>
+       <a href="cart.html" class="btn">Order Now</a>   
+             </div> 
+        </section>
+    
+        <!-------------------- About Us -------------------->
+        <section class="About-Us" id="About-Us"> 
+            <h2>ABOUT SAVORY PALACE </h2>  
+              <div class="ourservice">
+                  <div class="Who">
+                      <h3>  Who We Are </h3>
+                     <p> At <b>Savory Palace</b>, we serve <u>delicious</u>, <u>freshly prepared meals</u> made with love and <u>quality ingredients </u>. Our goal is to satisfy your cravings with amazing flavors and make ordering your favorite food easy and convenient.</p>
+     <h4>Savory Palace — Every Bite, A Royal Delight! 👑🍽️</h4>
+                  </div>
+                  
+                  <div class="why">
+                      <div class="Why-Us">   
+                    <h3> Why Choose Us?</h3>
+       <p><b>Savory Palace</b> believes every meal should be a delightful experience. From delicious flavors to quality ingredients and convenient online ordering, we bring happiness to your table with every bite.</p>
+           </div>
+                  <div class="About-card">
+                      
+                  
+                  <div class="card">
+                      <i class='bx bx-bowl-hot'></i>
+                   <h3>Delicious Meals</h3>   
+                   <p>Enjoy mouthwatering dishes prepared with rich flavors to satisfy your cravings.</p>
+                  </div>
+                  
+                  <div class="card">
+                    <i class='bx bx-leaf'></i>
+                    <h3> Fresh Ingredients</h3>
+                    <p>We prioritize fresh, quality ingredients to make every meal enjoyable.</p>
+                  </div>
+                  
+                  <div class="card">
+                    <i class='bx bx-cart'></i>
+                    <h3>Easy Online Ordering </h3>
+      <p> Order your favorite meals with just a few clicks, quickly and conveniently. </p>
+                  </div>
+                  
+                  <div class="card">
+                      <i class='bx bx-heart'></i>
+                      <h3> Made with Love </h3>
+                      <p> Every meal is prepared with care and passion to give you a satisfying experience.</p>
+                  </div>      
+                  </div>  
+                  </div>
+              </div>  
+             </section>
+             
+             <!-------------------MENU --------------  -->
+             
+             <section class="Menu" id="Menu"> 
+        
+    <div class="menu-heading">
+        <h2>Our Delicious Menu</h2>
+        <p>Discover your favorites, freshly prepared with love.</p>
+    </div>
+
+    <div class="menu-container">
+
+        <!-- Menu Item 1 -->
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="jolly.png"
+                     alt="Jollof Rice with Grilled Chicken">
+            </div>
+
+            <div class="menu-info">
+                <h3>Jollof Rice <br>
+                with Grilled Chicken</h3>
+                <p>A flavorful classic made with well-seasoned rice,  juicy grilled chicken and fresh side salad.</p>
+                 <span class="price">Price: ₦3,900</span><br>
+             <button class="add-to-cart" type="button" data-index="0">Add to Cart</button> 
+            </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="fried.png"
+                     alt="Fried Rice with Chicken">
+            </div>
+
+            <div class="menu-info">
+                <h3>Fried Rice with Chicken</h3>           
+           <p>Perfectly stir-fried rice with fresh vegetables and tender chicken, full of flavor in every bite.</p>
+              <span class="price"> Price: ₦3,800</span><br>
+        <button class="add-to-cart" type="button" data-index="1">Add to Cart</button>      
+            </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="spaghetti.png"
+                     alt="Spaghetti Bolognese">
+            </div>
+
+            <div class="menu-info">
+                <h3>Spaghetti Bolognese</h3>
+                <p>Tender spaghetti tossed in a rich, savory meat
+                   sauce and topped with cheese.</p>
+                 <span class="price">Price: ₦4,800</span><br>
+           <button class="add-to-cart" type="button" data-index="3">Add to Cart</button>   
+            </div>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="suya.png"
+                     alt="Beef Suya">
+            </div>
+
+            <div class="menu-info">
+                <h3>Beef Suya</h3>
+                <p>Spicy, smoky beef suya, perfectly grilled and
+                   served with onions and pepper mix.</p>
+                <span class="price">Price: ₦2,800</span><br>
+           <button class="add-to-cart" type="button" data-index="4">Add to Cart</button>  
+            </div>
+        </div>
+        
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="yam.png"
+                     alt="Pounded Yam with Egusi Soup">
+            </div>
+
+            <div class="menu-info">
+                <h3>Pounded Yam with Egusi Soup</h3>
+                <p>Soft, smooth pounded yam served with rich,
+       flavorful egusi soup, leafy vegetables and
+       delicious assorted meat.</p>
+                 <span class="price">Price: ₦4,000</span><br>
+            <button class="add-to-cart" type="button"    data-index="5">Add to Cart</button>  
+                </div>
+                </div> 
+    </div>
+    
+    <a id="pageLink" href="menu.html">View Menu</a>
+                
+                 <div class="How">
+                     <h3>How It Works</h3>
+                     <ul>
+                         <li> Choose Your Meal : Browse Our Menu.</li>
+                         <li> Add To cart : Select your favorite meals.</li>
+                         <li> Place Your Order: Provide Your Order Details.</li>
+           
+                        <li> Get Your Food: Receive Your Order through the available collection or delivery option..</li>              
+                          </ul>
+                 </div>
+                  
+             </section>
+             
+             <!-------------------Review --------------  -->
+             
+                <section class="Reviews" id="Reviews">
+                    
+                <div class="Review-title">
+                       <h2> REVIEWS </h2>
+                    <h3>What Our Customers Say</h3>
+           <p>Discover why our customers love Savory Palace! From delicious meals to great service, we make every order  special.</p>
+                   </div>
+                   
+               <div class="review-content">
+                   <div class="review-card">
+                   <h4> <span> <i class='bx bxs-user-circle'></i></span> Desmond C </h4>
+                   
+                       <h5> Delicious and Tasty! </h5>
+                       <p>
+            “The jollof rice and grilled chicken were so delicious! Every bite was full of flavor. I can't wait to order again!”      
+                       </p> 
+                      <div class="stars">
+                  <i class="bx bxs-star"></i>
+                   <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                     <i class="bx bxs-star"></i>
+                  
+                      </div>
+                   </div>
+                   
+                    <div class="review-card">
+                        <h4> <span> <i class='bx bxs-user-circle'></i></span> Semiat I. </h4>
+                         
+                       <h5>Amazing Experience! </h5>
+                       <p> 
+                       “Ordering was so easy, and the food was fresh and tasty. Savory Palace never disappoints!”                             
+                       </p> 
+                       <div class="stars">
+                             <i class="bx bxs-star"></i>
+                             <i class="bx bxs-star"></i>
+                             <i class="bx bxs-star"></i>
+                              <i class="bx bxs-star"></i>
+                              <i class="bx bxs-star"></i>
+                         </div>
+                   </div>
+                   
+                     <div class="review-card">
+                        <h4> <span> <i class='bx bxs-user-circle'></i></span> Asakeade A.</h4>
+                         
+                       <h5>Fresh and Delicious! </h5>
+                       <p> 
+                       “The food was delicious,well-prepared, and worth every naira. I especially loved the taste and portion size. I'll definitely order again”                             
+                       </p> 
+                       <div class="stars">
+                             <i class="bx bxs-star"></i>
+                             <i class="bx bxs-star"></i>
+                             <i class="bx bxs-star"></i>
+                              <i class="bx bxs-star"></i>
+                              <i class="bx bxs-star"></i>
+                         </div>
+                   </div>
+                   
+                    <div class="review-card">
+                  <h4> <span> <i class='bx bxs-user-circle'></i></span> Kehinde Ayeni </h4>   
+                       <h5> Simply the Best!</h5>
+                       <p>
+         “I love the variety of meals available. Everything tastes amazing, and the service makes ordering worthwhile!”
+                       </p>
+                      <div class="stars"> 
+                          <i class="bx bxs-star"></i>
+                           <i class="bx bxs-star"></i>
+                            <i class="bx bxs-star"></i>
+                             <i class="bx bxs-star"></i>
+                              <i class="bx bxs-star"></i>
+                           </div>
+                   </div>  
+               </div>   
+           </section>
+           
+            <!-- -----------------Order Now----------- -->
+            
+            <section class="order-now" id="order">
+    <h2>Craving Something Delicious?</h2>
+    <p>
+        Savory Palace is ready to satisfy your cravings
+        with delicious meals made just for you.
+        Choose your favorites and enjoy great taste
+        in every bite.
+    </p>
+    <h3>Don't Wait, Treat Yourself Today!</h3>
+    
+    <a href="menu.html" class="btn">Order Now</a>
+ </section>
+           
+               <!-- -----------------CONTACT------------ -->
+               
+               <section class="contact" id="contact">
+
+    <div class="contact-heading">
+         <h2>CONTACT</h2>
+        <h3>Get In Touch</h3>
+        <p>We're always happy to hear from you!</p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Let's Talk About Food!</h3>
+
+            <p>
+                Have questions about our menu or your order?
+                Reach out to us, and we'll be happy to help.
+            </p>
+
+            <div class="contact-item">
+                <i class="bx bx-phone"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+2348023456755</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="bx bx-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>hello@savorypalace.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="bx bx-map"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>3 Almiskin Offa, Kwara</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+     <label for="customerName">Your Name </label>
+                  <input type="text" id="customerName" placeholder="Enter Your Full Name" required>
+                 
+                  <label for="customerEmail">Your Email </label>
+                  <input type="email" id="customerEmail"  placeholder="Your Email" required>
+                 <label for="customerPhone">Your Phone Number
+                 </label>
+               <input type="tel" id="customerPhone" maxlength="11" pattern="0[0-9]{11}"placeholder="08012345678" required>
+               <label for="customerMessage"> Your Message </label>
+                  <textarea name="customerMessage" id="customerMessage" cols="22px" rows="05px" placeholder="Your Message"></textarea>
+            
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+</section>
+             
+                                   
+                   <!--     footer  -->
+                 
+                 <footer class="footer">
+                     <div class="attribution">
+             <p>© 2026 Savory Palace. All rights reserved.  Designed with<i class="bx bx-heart"></i> by  Ayokanmi Web Studio.</p>     
+                </div>
+                     
+                     <div class="move up">
+                         <a href="#Home"><i class="bx bx-up-arrow-alt"></i></a>
+                     </div>
+                 </footer>
+                   
+            <script src="script.js" ></script>                 
+                       
+</body>
+</html>

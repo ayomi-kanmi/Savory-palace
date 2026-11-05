@@ -1,0 +1,61 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Order  confirmation || Savory Palace </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER  -->
+      <header class="header">
+          <img  src="palace.png" alt="savory's Palace">
+          <div class="navMenu" id="navMenu">
+         <i class="bx bx-window-close" onclick="closeMenu()"></i>       
+        <ul>
+       <li><a href="Login.html" class="navbar">Dashboard</a></li>
+            <li> <a href="index.html">Home </a> </li>
+            <li> <a href="menu.html">Menu</a></li>
+      <li> <a href="order-confirmation.html">Confirmation</a></li>      
+        </ul> 
+          </div>
+          <i class="bx bx-menu" onclick="openMenu()"></i>
+      </header>
+      
+      <!--  TRACKING ORDER SECTION    -->
+      
+      <section class="track-order-section">
+          <div class="track-order">
+              <h1>Track Your Order </h1>
+              <p>
+               Enter your order ID to check the status of your delicious meal.
+              </p>
+              
+              <!-- TRACKING FORM   N-->
+      <form id="trackOrderForm">
+          <div class="form-group">
+              <label for="orderIDInput">Order ID </label>
+              <input type="text" id="orderIDInput" placeholder="Example: SP-12345" required>          
+          </div>
+          
+          <button type="submit" class="btn"><i class="bx bx-search"></i> Track Order </button>
+      </form>        
+      
+        <!--     MESSAGE  V -->
+        <div id="trackingMessage"aria-live="polite"> </div>
+        
+        <!-- Order Details  -->
+        <div id="trackingResult"> </div>    
+       
+          </div>
+          
+      </section>
+      
+      <!-- script  -->
+      <script src="track-order.js"> </script>
+      
+      
+</body>
+</html>

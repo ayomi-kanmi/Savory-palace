@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Order History || Savory Palace </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+        <!-- HEADER  -->
+      <header class="header">
+          <img  src="palace.png" alt="savory's Palace">
+          <div class="navMenu" id="navMenu">
+          <i class="bx bx-window-close" onclick="closeMenu()"></i>    
+        <ul>
+           <li> <a href="index.html">Home </a> </li>
+           <li> <a href="menu.html">Menu</a></li>
+           <li> <a href="cart.html"> My Cart </a></li>
+         <li> <a href="order-history.html">  History</a></li>
+          <li> <a href="track-order.html">Track-Order</a></li>
+          
+            </ul> 
+          </div>
+          <i class="bx bx-menu" onclick="openMenu()"></i>
+          </header>
+    <!-- ORDER HISTORY SECTION -->
+    <section class="order-history-section">
+
+        <div class="order-history-container">
+
+            <div class="order-history-heading">
+
+                <h1>My Order History</h1>
+
+                <p>
+                    View your previous orders at Savory Palace.
+                </p>
+
+            </div>
+
+
+            <!-- ORDER HISTORY WILL APPEAR HERE -->
+            <div id="orderHistory">
+
+                <p>Loading your orders...</p>
+
+            </div>
+
+
+            <!-- CLEAR HISTORY BUTTON -->
+           <div class="order-history-actions">
+                <button type="button" id="clearHistory" class="btn">
+                <i class="bx bx-trash"></i>
+                Clear Order History
+            </button>
+
+
+            <!-- BACK TO MENU -->
+            <a href="menu.html" class="btn">
+                <i class="bx bx-restaurant"></i>
+                Order More Food
+            </a>
+            
+           </div>
+        </div>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="order-history.js"></script>
+
+</body>
+
+</html>

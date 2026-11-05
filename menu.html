@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Savory Palace Menu </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER  -->
+      <header class="header">
+          <img  src="palace.png" alt="savory's Palace">
+          <div class="navMenu" id="navMenu">
+          <i class="bx bx-window-close" onclick="closeMenu()"></i>    
+        <ul>
+            <li> <a href="index.html">Home </a> </li>
+            <li> <a href="index.html#About-Us"> About Us</a> </li>
+            <li> <a href="menu.html">Menu</a></li>
+            <li> <a href="index.html#Reviews"> Reviews</a></li>
+            <li> <a href="index.html#order"> Order Now</a></li>
+            <li> <a href="index.html#contacts"> Contact </a></li>
+            
+        </ul> 
+          </div>
+          <i class="bx bx-menu" onclick="openMenu()"></i>
+      </header>
+      
+      <section class="sub-header" id="sub-header">
+          <h2> Savory Palace Menu </h2>
+      </section>
+      
+      <section class="Menu" id="Menu"> 
+        
+    <div class="menu-heading">
+        <h2>Our Delicious Menu</h2>
+        <p>Discover your favorites, freshly prepared with love.</p>
+    </div>
+
+    <div class="menu-container">
+
+        <!-- Menu Item 1 -->
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="jolly.png"
+                     alt="Jollof Rice with Grilled Chicken">
+            </div>
+
+            <div class="menu-info">
+                <h3>Jollof Rice <br>
+                with Grilled Chicken</h3>
+                <p>A flavorful classic made with well-seasoned rice,  juicy grilled chicken and fresh side salad.</p>
+                 <span class="price">Price: ₦3,900</span><br>
+                <button class="add-to-cart"type="button" data-index="0">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="fried.png"
+                     alt="Fried Rice with Chicken">
+            </div>
+
+            <div class="menu-info">
+                <h3>Fried Rice with Chicken</h3>           
+           <p>Perfectly stir-fried rice with fresh vegetables and tender chicken, full of flavor in every bite.</p>
+              <span class="price"> Price: ₦3,800</span><br>
+                <button class="add-to-cart" type="button" data-index="1">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Menuw Item 3 -->
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="spaghetti.png"
+                     alt="Spaghetti Bolognese">
+            </div>
+
+            <div class="menu-info">
+                <h3>Spaghetti Bolognese</h3>
+                <p>Tender spaghetti tossed in a rich, savory meat
+                   sauce and topped with cheese.</p>
+                 <span class="price">Price: ₦4,800</span><br>
+                <button class="add-to-cart" type="button" data-index="2">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="menu-card">
+            <div class="menu-image">
+                <img src="suya.png"
+                     alt="Beef Suya">
+            </div>
+
+            <div class="menu-info">
+                <h3>Beef Suya</h3>
+                <p>Spicy, smoky beef suya, perfectly grilled and
+                   served with onions and pepper mix.</p>
+                <span class="price">Price: ₦2,800</span><br>
+                <button class="add-to-cart" type="button" data-index="3">Add to Cart</button>
+            </div>
+        </div>
+    <!-- Menu Item 5 -->
+         <div class="menu-card">
+            <div class="menu-image">
+                <img src="yam.png"
+                     alt="Pounded Yam with Egusi Soup">
+            </div>
+
+            <div class="menu-info">
+                <h3>Pounded Yam with Egusi Soup</h3>
+                <p>Soft, smooth pounded yam served with rich,
+       flavorful egusi soup, leafy vegetables and
+       delicious assorted meat.</p>
+                 <span class="price">Price: ₦4,000</span><br>
+                <button class="add-to-cart" type="button" data-index="4">Add to Cart</button>
+                </div>
+                </div>
+                
+                <!-- Menu Item 6 -->
+         <div class="menu-card">
+            <div class="menu-image">
+                <img src="chicken.png"
+                     alt="Cheesy Grilled Chicken">
+            </div>
+
+            <div class="menu-info">
+                <h3>Cheesy Grilled Chicken</h3>
+                <p>Tender, juicy grilled chicken seasoned with special spices and topped with rich, melted cheese. Grilled to golden perfection, every bite delivers a delicious blend of smoky flavor and cheesy goodness.</p>
+                 <span class="price">Price: ₦4,500</span><br>
+                <button class="add-to-cart" type="button" data-index="5">Add to Cart</button>
+                </div>
+                </div>
+                
+                <!-- Menu Item 7 -->
+         <div class="menu-card">
+            <div class="menu-image">
+                <img src="chips.png"
+                     alt="Chicken and Chips">
+            </div>
+
+            <div class="menu-info">
+                <h3>Chicken and Chips</h3>
+                <p> Juicy, well-seasoned grilled chicken served with crispy golden fries and a delicious dipping sauce
+       for a satisfying meal.</p>
+                 <span class="price">Price: ₦2,500</span><br>
+                <button class="add-to-cart" type="button" data-index="6">Add to Cart</button>
+                </div>
+                </div>
+                
+                <!-- Menu Item 7 -->
+         <div class="menu-card">
+            <div class="menu-image">
+                <img src="burger.png"
+                     alt="Burger">
+            </div>
+
+            <div class="menu-info">
+                <h3>Burger</h3>
+                <p>A juicy grilled beef patty topped with melted cheese, fresh vegetables, and our signature sauce, served in a soft, toasted bun. 🍔</p>
+                 <span class="price">Price: ₦2,500</span><br>
+                <button class="add-to-cart" type="button" data-index="7">Add to Cart</button>
+                </div>
+                </div>              
+    </div>
+    <a href="cart.html" class="a-tag">View Cart 🛒</a>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Order  confirmation || Savory Palace </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER  -->
+      <header class="header">
+          <img  src="palace.png" alt="savory's Palace">
+          <div class="navMenu" id="navMenu">
+          <i class="bx bx-window-close" onclick="closeMenu()"></i>    
+        <ul>
+             <li> <a href="index.html">Home </a> </li>
+           <li> <a href="menu.html">Menu</a></li>
+           <li> <a href="cart.html"> My Cart </a></li>
+       <li> <a href="order-history.html"> History</a></li>
+       <li> <a href="track-order.html">Track-Order</a></li>
+          
+            
+        </ul> 
+          </div>
+          <i class="bx bx-menu" onclick="openMenu()"></i>
+      </header>
+      
+
+
+    <!-- ORDER CONFIRMATION SECTION -->
+    <section class="order-confirmation-section">
+
+        <div class="confirmation-container">
+
+            <!-- SUCCESS MESSAGE -->
+            <div class="confirmation-header">
+                <i class="bx bx-check-circle"></i>
+
+                <h1>Order Placed Successfully!</h1>
+
+                <p>
+                    Thank you for choosing Savory Palace.
+                    Your delicious meal is on its way to being prepared!
+                </p>
+            </div>
+
+
+            <!-- ORDER INFORMATION -->
+            <div class="confirmation-details">
+
+                <h2>Order Details</h2>
+
+                <div class="confirmation-info">
+                    <p>
+                        <strong>Order ID:</strong>
+                        <span id="orderID">Loading...</span>
+                    </p>
+
+                    <p>
+                        <strong>Order Date:</strong>
+                        <span id="orderDate">Loading...</span>
+                    </p>
+
+                    <p>
+                        <strong>Order Status:</strong>
+                        <span id="orderStatus">Loading...</span>
+                    </p>
+
+                    <p>
+                        <strong>Customer Name:</strong>
+                        <span id="customerName">Loading...</span>
+                    </p>
+
+                    <p>
+                        <strong>Phone Number:</strong>
+                        <span id="customerPhone">Loading...</span>
+                    </p>
+
+                    <p>
+                        <strong>Order Method:</strong>
+                        <span id="orderMethod">Loading...</span>
+                    </p>
+
+                    <p id="addressRow">
+                        <strong>Delivery Address:</strong>
+                        <span id="deliveryAddress">Loading...</span>
+                    </p>
+                </div>
+
+
+                <!-- ORDERED FOOD -->
+                <h2>Your Food</h2>
+
+                <div id="confirmedItems" class="confirmed-items">
+                    <p>Loading your order...</p>
+                </div>
+
+
+                <!-- TOTAL -->
+                <div class="confirmation-total">
+                    <h3>
+                        Total Amount:
+                        <span id="orderTotal">0</span>
+                    </h3>
+                </div>
+
+            </div>
+
+
+            <!-- ACTION BUTTONS -->
+            <div class="confirmation-buttons">
+
+                <a href="index.html" class="a-tag">
+                    <i class="bx bx-home"></i>
+                    Back to Home
+                </a>
+
+                <a href="order-history.html" class="a-tag">
+                    <i class="bx bx-receipt"></i>
+                    View Order History
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="order-confirmation.js"></script>
+
+</body>
+
+</html>

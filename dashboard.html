@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Admin Dashboard | Savory Palace </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER  -->
+      <header class="header">
+          <img  src="palace.png" alt="savory's Palace">
+          <div class="navMenu" id="navMenu">
+          <i class="bx bx-window-close" onclick="closeMenu()"></i>    
+        <ul>
+            <li> <a href="index.html">View Website </a> </li>
+           
+            <li> <a href="menu.html">Menu</a></li>
+            <li> <a href="order-history.html"> Order History</a></li>
+            
+           </ul> 
+          </div>
+          <i class="bx bx-menu" onclick="openMenu()"></i>
+      </header>
+
+            <!--     ADMIN DASHBOARD   -->      
+            <section class="admin">
+                
+               <div class="admin-container">
+                   <div class="heading">
+                       <h1> Admin Dashboard </h1>
+                       <p>Manage Savory Palace customer orders. </p>
+                   </div>
+                   
+                   <!--   DASHBOARD  STATISTICS  -->
+                   <div class="admin-stats">
+                       <div class="admin-stats-card">
+                           <i class="bx bx-receipt"> </i>
+                           <h3> Total Orders </h3>
+                           <p id="totalOrder">0</p>
+                       </div>
+                       
+                       <div class="admin-stats-card">
+                           <i class="bx bx-time-five"> </i>
+                           <h3> Pending Orders </h3>
+                           <p id="PendingOrder">0</p>
+                       </div>
+                       
+                      <div class="admin-stats-card">
+                           <i class="bx bx-check-circle"> </i>
+                           <h3> Complete Orders </h3>
+                           <p id="completeOrder">0</p>
+                       </div>
+                       
+                       <div class="admin-stats-card">
+                           <i class="bx bx-money"> </i>
+                           <h3> Total Order Value </h3>
+                           <p id="totalRevenue">₦0</p>
+                       </div>
+                       
+                   </div>
+                   
+                   <!--  ORDER MANAGEMENT  -->
+           <div class="admin-orders">
+             <h2> Customer Orders </h2>  
+             
+             <div id="adminOrders">
+               <p>Loading Customer Orders...</p>                
+             </div>
+               
+           </div>        
+                  
+               </div> 
+                
+            </section>
+           <!--     JAVASCRIPT -->
+           <script src="dashboard.js"></script>
+      </body>
+      </html>

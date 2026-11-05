@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Checkout || Savory Palace </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER  -->
+      <header class="header">
+          <img  src="palace.png" alt="savory's Palace">
+          <div class="navMenu" id="navMenu">
+          <i class="bx bx-window-close" onclick="closeMenu()"></i>    
+        <ul>
+            <li> <a href="index.html">Home </a> </li>
+            <li> <a href="index.html#About-Us"> About Us</a> </li>
+            <li> <a href="menu.html">Menu</a></li>
+            <li> <a href="index.html#Reviews"> Reviews</a></li>
+            <li> <a href="index.html#order"> Order Now</a></li>
+            <li> <a href="index.html#contacts"> Contact </a></li>
+            
+        </ul> 
+          </div>
+          <i class="bx bx-menu" onclick="openMenu()"></i>
+      </header>
+      
+      <!--    CHECKOUT SECTION -->
+      
+      <section class="checkout">
+          <h1> Complete Your Order </h1>
+          <p> You're just one step away from enjoying your favorite meal!</p>
+          
+          <!-- ORDER SUMMARY  -->
+          <div class="checkout-summary">
+              <h2>Your Order </h2>
+              <div  id="checkoutItems">
+                  <!-- Js displays selected foods-->
+                  
+              </div>
+              <h3> 
+                  Total Amount: ₦<span id="checkoutTotal">0</span>
+              </h3>
+          </div>
+          
+          <!--  CUSTOMER FORM.  -->
+          
+          <form id="checkoutForm">
+              <h2> Delivery Information</h2>
+              
+              <div class="form-group">
+                <label for="customerName"> Full Name:</label>
+               <input type="text" id="customerName" name="customerName" placeholder="Enter Your Name"required>
+               </div>
+               
+               <div class="form-group">
+                   <label for="customerPhone"> Phone Number:</label>
+                   <input type="tel" id="customerPhone" name="customerPhone" placeholder="08012345694" maxlength="11"
+        pattern="0[0-9]{10}"
+        title="Enter an 11-digit Nigerian phone number starting with 0"required>         
+               </div>
+               
+               <div class="form-group">
+                   <label for="deliveryOption">Order Method:</label>
+                   <select id="deliveryOption"name="deliveryOption" required> 
+                       <option value=""> choose an option </option>
+                       <option value="delivery"> Home Delivery </option>
+                       <option value="pickup"> Pickup at Restaurant </option>
+                       
+                   </select>
+               </div>
+               
+               <div class="form-group" id="addressGroup">
+                   
+                   <label for="deliveryAddress"> Delivery Address</label>
+                   <textarea id="deliveryAddress" name="deliveryAddress" placeholder="Enter Your Delivery Address" rows="4">
+              </textarea>    
+               </div>
+               
+               <button type="submit" class="btn"> Place Order </button>
+               <a href="cart.html" class="a-tag"> Back To Cart</a>
+          </form>
+          
+           <!-- ORDER message-->
+          <div id="checkoutMessage" aria-live="polite"></div> 
+          
+          
+          
+    </section>
+        
+        <script src="checkout.js"> </script>  
+      </body>
+      </html>
